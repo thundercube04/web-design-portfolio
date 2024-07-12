@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Brittany;
+    src: url(./assets/fonts/brittany/Brittany_Typeface.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Slopes;
+    src: url(./assets/fonts/slopes/Slopes.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(./assets/fonts/bebas_neue/BebasNeue-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: bristol;
+    src: url(./assets/fonts/bristol/Bristol.otf);
+}
+
+@font-face {
+    font-family: 'Quirky Robot';
+    src: url(./assets/fonts/quirky-robot/QuirkyRobot.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Northwest;
+    src: url(./assets/fonts/northwest_bridge/Northwest.ttf) format(truetype);
+}
+
+body {
+    background-color: #d2ffaa;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    margin-bottom: 5rem; 
+} 
+
+.intro {
+    height: 650px;
+}
+
+.intro > img {
+    position: absolute;
+    left: 30%;
+    bottom: -10%;
+    z-index: -2;
+}
+
+.pink-text {
+    color: #ff7feb;
+}
+
+.intro-title {
+    font-family: Brittany;
+    font-size: 110px;
+    font-weight: 500;
+    position: absolute;
+    right: 0%;
+}
+
+.intro-context-1 {
+    font-family: Slopes;
+    font-size: 50px;
+    font-weight: 400;
+    position: absolute;
+    right: 25%;
+    top: 30%;
+}
+
+.intro-context-2 {
+    font-family: Slopes;
+    font-size: 40px;      
+    font-weight: 400;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+} 
+
+.intro-highlight {
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    font-size: 5rem;
+    position: absolute;
+    right: 19%;
+    top: 34%;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile > .profile-background-img {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    opacity: 0.5;
+}
+
+.profile > .profile-img {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+.profile > .profile-heading {
+    font-family: 'Quirky Robot';
+    font-size: 10rem;
+    font-weight: 700;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.profile > .profile-details > * {
+    font-family: Northwest;
+    margin: 0;
+
+}
+.profile > .profile-details > .profile-details-topic {
+    font-size: 3rem;
+}
+
+.profile > .profile-details > .profile-details-name {
+    font-size: 12rem;
+    text-align: center;
+}
+
+.blue-text {
+    color: #5ce1e6;
+}
+
+.purple-text {
+    color: #8c52ff;
+}
+
+
+.skills .blue-text {
+    font-family: bristol;
+    font-size: 5rem;
+    margin: 0px;
+}
+
+.free-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    font-family: Northwest;
+    font-size: 3rem;
+}
+
+.skills > .skills-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills > .skills-title {
+    font-family: 'Quirky Robot';
+    font-size: 7rem;
+    letter-spacing: 5px;
+    margin: 0px;
+}
+
+.skills > .skills-list > .skills-list-left {
+    text-align: left;
+    width: 20%;
+}
+
+.skills > .skills-list > .skills-list-right {
+    text-align: right;
+    width: 20%;
+}
+
+.contacts {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts  p {
+    margin: 0px;
+}
+
+.contacts > .contacts-title {
+    font-family: 'Bebas Neue';
+    font-size: 15rem;
+    width: min-content;
+    line-height: 15.2rem;
+}
+
+.contacts > .contacts-info {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts > .contacts-info > p {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.outro {
+    display: grid;
+    grid-template-columns: 40% 10% 10% 40%;
+    grid-template-rows: 50% 10% 40%;
+    height: 40rem;
+}
+
+.outro > p {
+    margin: 0;
+}
+
+.outro > .outro-title {
+    font-family: 'Bebas Neue';
+    font-size: 5rem;
+    font-weight: 900;
+    grid-area: 1 / 1 / 2 / 4;
+    letter-spacing: 1.25rem;
+    align-self: center;
+}
+
+.outro > .outro-topic {
+    font-family: bristol;
+    font-size: 4rem;
+    grid-area: 3 / 1 / 4 / 2;
+    align-self: flex-end;
+}
+
+.outro > .outro-pricing {
+    font-family: bristol;
+    font-size: 15rem;
+    grid-area: 2 / 2 / 4 / -1;
+    line-height: 11rem;
+    align-self: flex-end;
+    letter-spacing: -1.75rem;
+}
